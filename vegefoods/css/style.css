@@ -9935,14 +9935,13 @@ h1, h2, h3, h4, h5,
 }
 .owl-carousel.home-slider {
   position: relative;
-  width: 100vw;
   z-index: 0;
+  width: 100%;
 }
 .owl-carousel.home-slider .slider-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100vw;
   height: 60vh;
   position: relative;
   z-index: 0;

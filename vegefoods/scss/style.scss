@@ -498,9 +498,6 @@ h1, h2, h3, h4, h5,
 			@include media-breakpoint-down(lg){
 				background-position: center center !important;
 			}
-			@include media-breakpoint-up(md) {
-				height: 90vh;
-			}
 			.overlay{
 				position: absolute;
 				top: 0;
@@ -527,9 +524,9 @@ h1, h2, h3, h4, h5,
 				}
 				.slide1{
 					@include media-breakpoint-up(md) {
-						margin-top: 50vh;
+						margin-top: 30vh;
 						margin-right: 75px;
-						transform: translate(0, -70%);;
+						transform: translate(0, -50%);;
 					}
 				}
 				.slide2{

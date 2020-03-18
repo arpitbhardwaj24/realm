@@ -9951,11 +9951,6 @@ h1, h2, h3, h4, h5,
     background-position: center center !important;
   }
 }
-@media (min-width: 768px) {
-  .owl-carousel.home-slider .slider-item {
-    height: 90vh;
-  }
-}
 .owl-carousel.home-slider .slider-item .overlay {
   position: absolute;
   top: 0;
@@ -9985,9 +9980,9 @@ h1, h2, h3, h4, h5,
 }
 @media (min-width: 768px) {
   .owl-carousel.home-slider .slider-item .slider-text .slide1 {
-    margin-top: 50vh;
+    margin-top: 30vh;
     margin-right: 75px;
-    transform: translate(0, -70%);
+    transform: translate(0, -50%);
   }
 }
 @media (min-width: 768px) {

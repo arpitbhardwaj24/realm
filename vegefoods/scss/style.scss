@@ -660,6 +660,9 @@ h1, h2, h3, h4, h5,
 
 .bg-color-1{
 	background: $primary;
+	&:hover {
+		transform: rotate(359deg);
+	}
 }
 
 //BUTTON
@@ -959,13 +962,11 @@ h1, h2, h3, h4, h5,
 			opacity: 0;
 			@include transition(.3s);
 			a{
-				color: $white;
+				color: $primary;
 				width: 100%;
-				background: $primary;
 				width: 40px;
 				height: 40px;
 				margin: 0 auto;
-				@include border-radius(50%);
 			}
 			.m-auto{
 				margin: 0 auto;
@@ -1504,6 +1505,7 @@ textarea.form-control {
 	font-size: 14px;
 	padding: 7em 0;
 	color: $black;
+	background-color: #f6f6f6;
 	.ftco-footer-logo {
 		text-transform: uppercase;
 		letter-spacing: .1em;

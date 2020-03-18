@@ -10118,6 +10118,9 @@ h1, h2, h3, h4, h5,
 .bg-color-1 {
   background: #ff1e24;
 }
+.bg-color-1:hover {
+  transform: rotate(359deg);
+}
 
 .btn {
   cursor: pointer;
@@ -10399,13 +10402,11 @@ h1, h2, h3, h4, h5,
   transition: all 0.3s ease;
 }
 .product .text .bottom-area a {
-  color: #fff;
+  color: #ff1e24;
   width: 100%;
-  background: #ff1e24;
   width: 40px;
   height: 40px;
   margin: 0 auto;
-  border-radius: 50%;
 }
 .product .text .bottom-area .m-auto {
   margin: 0 auto;
@@ -10893,6 +10894,7 @@ textarea.form-control {
   font-size: 14px;
   padding: 7em 0;
   color: #000000;
+  background-color: #f6f6f6;
 }
 .ftco-footer .ftco-footer-logo {
   text-transform: uppercase;

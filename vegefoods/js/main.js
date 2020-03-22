@@ -3,6 +3,28 @@
  	easing: 'slide'
  });
 
+
+var setActive = (id) => {
+	var arr = document.getElementsByClassName('filter-button');
+	for (let item of arr) {
+		item.classList.remove('active');
+	}
+   document.getElementById(id).classList.add('active');
+}
+
+
+var $grid = $('.grid').isotope({
+	// options
+	itemSelector: '.grid-item',
+	layoutMode: 'fitRows'
+  });
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+	var filterValue = $(this).attr('data-filter');
+	$grid.isotope({ filter: filterValue });
+  });
+
 (function($) {
 
 	"use strict";

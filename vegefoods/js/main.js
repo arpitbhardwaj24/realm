@@ -25,6 +25,12 @@ $('.filter-button-group').on( 'click', 'button', function() {
 	$grid.isotope({ filter: filterValue });
   });
 
+  $("#contact-form").submit(function(e){
+	e.preventDefault();
+
+	});
+
+
 (function($) {
 
 	"use strict";

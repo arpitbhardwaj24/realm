@@ -92,13 +92,28 @@ h1, h2, h3, h4, h5,
 	}
 }
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+	height:100%;
+	min-height: 400px;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .ftco-navbar-light {
 	background: transparent !important;
 	// position: absolute;
 	// top: 20px;
 	// left: 0;
 	// right: 0;
-	z-index: 3;
+	z-index: 4;
 	padding: 0;
 	@include media-breakpoint-down(md) {
 		background: $black!important;
@@ -1118,25 +1133,28 @@ h1, h2, h3, h4, h5,
 		}
 
 	}
+
+	.form-control{
+		padding-right: 40px;
+		color: $black;
+		background: transparent !important;
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: lighten($black,30%);
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: lighten($black,30%);
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: lighten($black,30%);
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: lighten($black,30%);
+		}
+	}
+
 	.form-group{
 		position: relative;
-		.form-control{
-			padding-right: 40px;
-			color: $black;
-			background: transparent !important;
-			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-			  color: lighten($black,30%);
-			}
-			&::-moz-placeholder { /* Firefox 19+ */
-			  color: lighten($black,30%);
-			}
-			&:-ms-input-placeholder { /* IE 10+ */
-			  color: lighten($black,30%);
-			}
-			&:-moz-placeholder { /* Firefox 18- */
-			  color: lighten($black,30%);
-			}
-		}
+		
 		.icon {
 			position: absolute;
 			top: 50%;
@@ -1515,6 +1533,7 @@ h1, h2, h3, h4, h5,
 
 .form-control {
 	height: 52px!important;
+	margin-bottom: 20px;
 	background: $white!important;
 	color: $black!important;
 	font-size: 18px;
@@ -2280,6 +2299,7 @@ textarea.form-control {
 	}
 	.contact-form{
 		width: 100%;
+		position: relative;
 	}
 }
 .block-9 {

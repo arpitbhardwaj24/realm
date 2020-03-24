@@ -10413,6 +10413,16 @@ h1, h2, h3, h4, h5,
   position: relative;
   display: block;
   overflow: hidden;
+  text-align: center;
+  height: 300px;
+}
+.product .img-prod .img-fluid {
+  margin: 20px;
+  height: 250px;
+}
+.product .img-prod .img-fluid2 {
+  width: 100%;
+  margin-top: 50px;
 }
 .product .img-prod .overlay {
   position: absolute;
@@ -11135,11 +11145,10 @@ textarea.form-control {
   right: 10px;
   bottom: 10px;
   content: "";
-  border: 2px solid rgba(255, 255, 255, 0.19);
   border-radius: 50%;
 }
 .ftco-services .services .icon span {
-  font-size: 40px;
+  font-size: 50px;
   color: #fff;
   transition: all 0.3s ease;
 }

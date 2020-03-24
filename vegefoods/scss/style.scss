@@ -961,6 +961,16 @@ h1, h2, h3, h4, h5,
 		position: relative;
 		display: block;
 		overflow: hidden;
+		text-align: center;
+		height: 300px;
+		.img-fluid{
+			margin: 20px;
+			height: 250px;
+		}
+		.img-fluid2{
+			width: 100%;
+			margin-top: 50px;
+		}
 		.overlay{
 			position: absolute;
 			top: 0;
@@ -1783,11 +1793,11 @@ textarea.form-control {
 				right: 10px;
 				bottom: 10px;
 				content: '';
-				border: 2px solid rgba(255,255,255,.19);
+				// border: 2px solid rgba(255,255,255,.19);
 				@include border-radius(50%);
 			}
 			span{
-				font-size:40px;
+				font-size:50px;
 				color: $white;
 				@include transition(.3s);
 			}

@@ -843,8 +843,8 @@ h1, h2, h3, h4, h5,
 	height: 500px;
 	margin-top: 100px;
 	@include media-breakpoint-down(sm){
+		margin: 20px;
 		height: 300px;
-		margin: 0 0;
 	}
 	.icon{
 		width: 100px;
@@ -868,6 +868,9 @@ h1, h2, h3, h4, h5,
 	}
 	.heading-section-bold{
 		h2{
+			@include media-breakpoint-down(lg){
+				margin-top: 0px;
+			}
 			margin-top: 100px;
 			font-size: 40px;
 			font-weight: 600;

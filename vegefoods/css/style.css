@@ -10296,8 +10296,8 @@ h1, h2, h3, h4, h5,
 }
 @media (max-width: 767.98px) {
   .img-2 {
+    margin: 20px;
     height: 300px;
-    margin: 0 0;
   }
 }
 .img-2 .icon {
@@ -10330,6 +10330,11 @@ h1, h2, h3, h4, h5,
   font-size: 40px;
   font-weight: 600;
   color: #000000;
+}
+@media (max-width: 1199.98px) {
+  .wrap-about .heading-section-bold h2 {
+    margin-top: 0px;
+  }
 }
 
 .deal-of-the-day h3 {

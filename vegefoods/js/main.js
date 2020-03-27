@@ -3,6 +3,19 @@
  	easing: 'slide'
  });
 
+
+ function exp() {
+	var sum = 0;
+	for (var i = 0; i < arguments.length; i++) {
+	sum += arguments[i]
+	}
+	console.log(sum);
+	}
+	
+	exp(1,2,3,4);
+	exp(5,7,8,9,10,11);
+
+
  document.addEventListener("DOMContentLoaded", function() {
 	var lazyloadImages = document.querySelectorAll("img.lazy");    
 	var lazyloadThrottleTimeout;

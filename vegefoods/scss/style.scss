@@ -1644,7 +1644,9 @@ textarea.form-control {
 				margin-bottom: 0px;
 				a{
 					color: $black;
+					
 				}
+				
 			}
 		}
 		.btn-primary{
@@ -1656,6 +1658,11 @@ textarea.form-control {
 			}
 		}
 	}
+}
+
+.active-footer {
+		color: $primary !important;
+		font-weight: 800;
 }
 
 

@@ -202,13 +202,14 @@ h1, h2, h3, h4, h5,
 
 			.dropdown-menu{
 				border: none;
+				margin-top: -10px;
 				background: $white;
 				-webkit-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
 				-moz-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
 				box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
 				@include border-radius(0);
 				.dropdown-item{
-					font-size: 18px;
+					font-size: 20px;
 					&:hover, &:focus{
 						background: transparent;
 						font-size: 20px;
@@ -545,7 +546,8 @@ h1, h2, h3, h4, h5,
 	&.active {
 		color: $white;
 		background: $primary;
-		@include border-radius(20px);
+		padding: 8px;
+		@include border-radius(10px);
 		-webkit-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	-moz-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);

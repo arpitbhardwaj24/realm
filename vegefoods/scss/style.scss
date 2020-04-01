@@ -527,6 +527,16 @@ h1, h2, h3, h4, h5,
 	}
 }
 
+.banner{
+		background-image: url(../images/bg_4.2.jpg); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 55vh;
+        background-attachment: fixed;
+		position: relative;
+}
+
 .subheading{
 	font-weight: 400;
 	font-size: 18px;
@@ -982,6 +992,9 @@ h1, h2, h3, h4, h5,
 .home-icons{
 	margin-bottom: 60px;
 	padding: 0 10px;
+	@include media-breakpoint-down(sm){
+		margin-bottom: 0px;
+	}
 }
 
 .home-icons-2{

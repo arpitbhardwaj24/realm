@@ -92,7 +92,13 @@ h1, h2, h3, h4, h5,
 	color: $primary!important;
 }
 
+.col-sm-6 {
+	width: 50% !important;
+}
 
+.col-xs-6 {
+	width: 50% !important;
+}
 
 .topper{
 	font-size: 11px;
@@ -515,7 +521,7 @@ h1, h2, h3, h4, h5,
 
 //about-banner
 .slide3{
-	margin-top: 150px;
+	margin-top: 100px;
 	@include media-breakpoint-up(md) {
 		margin-top: 200px;
 	}
@@ -563,6 +569,20 @@ h1, h2, h3, h4, h5,
 		-webkit-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	-moz-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
+	}
+}
+
+.ground{
+	height: 300px;
+	@include media-breakpoint-down(sm){
+		height: 250px;
+	}
+}
+
+.blended{
+	height: 400px;
+	@include media-breakpoint-down(sm){
+		height: 300px;
 	}
 }
 
@@ -964,6 +984,10 @@ h1, h2, h3, h4, h5,
 	padding: 0 10px;
 }
 
+.home-icons-2{
+	padding: 0 10px;
+}
+
 .left-card{
 	padding: 0;
 }
@@ -979,11 +1003,19 @@ margin: 0 8px;
 margin-top: 50px;
 background: $white;
 padding: 20px;
--webkit-box-shadow: 6px 7px 20px -15px rgb(112, 112, 112);
--moz-box-shadow: 6px 7px 20px -15px rgb(112, 112, 112);
-box-shadow: 6px 7px 20px -15px rgb(112, 112, 112);
+-webkit-box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
+-moz-box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
+box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
 
 }
+
+.boxed{
+	-webkit-box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
+-moz-box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
+box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
+}
+
+
 
 //DEAL OF THE DAY
 .deal-of-the-day{
@@ -1072,21 +1104,26 @@ box-shadow: 6px 7px 20px -15px rgb(112, 112, 112);
 	border: 1px solid lighten($black,94%);
 	@include media-breakpoint-down(md){
 		margin-bottom: 30px;
-		min-height: 300px;
 	}
 	.img-prod{
 		position: relative;
 		display: block;
 		overflow: hidden;
 		text-align: center;
-		height: 300px;
+		height: 100%;
 		.img-fluid{
 			margin: 20px;
 			height: 250px;
+			@include media-breakpoint-down(sm){
+				height: 150px;
+	}
 		}
 		.img-fluid2{
 			width: 100%;
-			margin-top: 50px;
+			height: 200px;
+			@include media-breakpoint-down(sm){
+				height: 150px;
+	}
 		}
 		.overlay{
 			position: absolute;
@@ -1163,6 +1200,9 @@ box-shadow: 6px 7px 20px -15px rgb(112, 112, 112);
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			font-family: $font-primary;
+			@include media-breakpoint-down(sm){
+				font-size: 12px;
+			}
 			a{
 				color: $black;
 			}

@@ -9663,7 +9663,7 @@ h1, h2, h3, h4, h5,
   top: 0;
 }
 .ftco-navbar-light .container-fluid {
-  padding: 10px 10px;
+  padding: 10px 30px;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .container-fluid {
@@ -9679,6 +9679,15 @@ h1, h2, h3, h4, h5,
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-brand {
     color: #fff;
+  }
+}
+.ftco-navbar-light .navbar-brand img {
+  width: 135px;
+  margin: 5px;
+}
+@media (max-width: 991.98px) {
+  .ftco-navbar-light .navbar-brand img {
+    width: 120px;
   }
 }
 @media (max-width: 991.98px) {
@@ -9721,11 +9730,10 @@ h1, h2, h3, h4, h5,
   border-radius: 0;
 }
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
-  font-size: 20px;
+  font-size: 18px;
 }
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover, .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
   background: transparent;
-  font-size: 20px;
   color: #ff1e24;
   font-weight: 500;
 }
@@ -9962,13 +9970,24 @@ h1, h2, h3, h4, h5,
 }
 
 .banner {
-  background-image: url(../images/bg_4.2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 55vh;
   background-attachment: fixed;
   position: relative;
+}
+
+.banner-ground {
+  background-image: url(../images/ground-banner.jpg);
+}
+
+.banner-whole {
+  background-image: url(../images/whole-banner.jpg);
+}
+
+.banner-blended {
+  background-image: url(../images/blended-banner.jpg);
 }
 
 .subheading {
@@ -10638,16 +10657,14 @@ h1, h2, h3, h4, h5,
   width: 100%;
 }
 .product .text h3 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-family: "Raleway", sans-serif;
 }
 @media (max-width: 767.98px) {
   .product .text h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .product .text h3 a {
@@ -10694,6 +10711,44 @@ h1, h2, h3, h4, h5,
   opacity: 0;
 }
 .product:hover .text .bottom-area {
+  opacity: 1;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middle .img-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .middle .img-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.blended .product:hover .img-prod .overlay {
+  opacity: 0.8;
+}
+.blended .product:hover .img-prod .middle {
+  opacity: 1;
+}
+
+.ground .product:hover .img-prod .overlay {
+  opacity: 0.7;
+}
+.ground .product:hover .img-prod .middle {
   opacity: 1;
 }
 

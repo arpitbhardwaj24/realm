@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5,
 	}
 
 	.container-fluid{
-		padding: 10px 10px;
+		padding: 10px 30px;
 		@include media-breakpoint-down(md) {
 			padding: 2px 15px;
 		}
@@ -183,6 +183,13 @@ h1, h2, h3, h4, h5,
 		}
 		@include media-breakpoint-down(md){
 			color: $white;
+		}
+		img{
+			width: 135px;
+			margin: 5px;
+			@include media-breakpoint-down(md){
+				width: 120px;
+			}
 		}
 	}
 
@@ -227,10 +234,9 @@ h1, h2, h3, h4, h5,
 				box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
 				@include border-radius(0);
 				.dropdown-item{
-					font-size: 20px;
+					font-size: 18px;
 					&:hover, &:focus{
 						background: transparent;
-						font-size: 20px;
 						color: $primary;
 						font-weight: 500;
 					}
@@ -528,13 +534,24 @@ h1, h2, h3, h4, h5,
 }
 
 .banner{
-		background-image: url(../images/bg_4.2.jpg); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         height: 55vh;
         background-attachment: fixed;
 		position: relative;
+}
+
+.banner-ground{
+	background-image: url(../images/ground-banner.jpg); 
+}
+
+.banner-whole{
+	background-image: url(../images/whole-banner.jpg); 
+}
+
+.banner-blended{
+	background-image: url(../images/blended-banner.jpg); 
 }
 
 .subheading{
@@ -1207,14 +1224,13 @@ box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
 		position: relative;
 		width: 100%;
 		h3{
-			font-size: 14px;
+			font-size: 16px;
 			margin-bottom: 5px;
-			font-weight: 300;
-			text-transform: uppercase;
-			letter-spacing: 1px;
+			// text-transform: uppercase;
+			letter-spacing: 1.5px;
 			font-family: $font-primary;
 			@include media-breakpoint-down(sm){
-				font-size: 12px;
+				font-size: 14px;
 			}
 			a{
 				color: $black;
@@ -1269,6 +1285,58 @@ box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
 		.text{
 			.bottom-area{
 				opacity: 1;
+			}
+		}
+	}
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  .img-text{
+	  color: $white;
+	  font-size: 16px;
+	  line-height: 25px;
+	  text-transform: uppercase;
+	  @include media-breakpoint-down(sm){
+		font-size: 14px;
+		line-height: 20px;
+	}
+  }
+}
+
+.blended{
+	.product{
+		&:hover{
+			.img-prod{
+				.overlay{
+					opacity: 0.8;
+				}
+				.middle{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.ground {
+	.product{
+		&:hover{
+			.img-prod{
+				.overlay{
+					opacity: 0.7;
+				}
+				.middle{
+					opacity: 1;
+				}
 			}
 		}
 	}

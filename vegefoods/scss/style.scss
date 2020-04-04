@@ -600,16 +600,16 @@ h1, h2, h3, h4, h5,
 }
 
 .ground{
-	height: 300px;
+	height: 330px;
 	@include media-breakpoint-down(sm){
-		height: 250px;
+		height: 275px;
 	}
 }
 
 .blended{
-	height: 400px;
+	height: 425px;
 	@include media-breakpoint-down(sm){
-		height: 300px;
+		height: 310px;
 	}
 }
 
@@ -1112,7 +1112,7 @@ box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
 
 .ftco-heading-2{
 	font-weight: 800 !important;
-	margin-top: 50px;
+	margin-top: 40px;
 	@include media-breakpoint-down(md){
 		margin-top: 0;
 	}
@@ -1128,12 +1128,12 @@ box-shadow: 4px 6px 15px -15px rgb(112, 112, 112);
 .product{
 	display: block;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	position: relative;
 	@include transition(.3s);
 	border: 1px solid lighten($black,94%);
 	@include media-breakpoint-down(md){
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 	.img-prod{
 		position: relative;
